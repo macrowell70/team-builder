@@ -26,11 +26,11 @@ function App() {
   };
 
   const submitForm = () => {
-    const newTeamMember = {
+    setTeamMembers(teamMembers.concat({
       name: formValues.name.trim(),
       email: formValues.email.trim(),
       role: formValues.role
-    }
+    }))
   }
 
   return (
